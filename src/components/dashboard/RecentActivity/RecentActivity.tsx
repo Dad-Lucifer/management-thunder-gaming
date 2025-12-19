@@ -1,13 +1,12 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import {
     Clock, Coffee, User, Trophy, Zap, Ghost,
-    ChevronRight, History, Activity, Sparkles,
-    Flame, AlertCircle, Timer, Crown
+    ChevronRight, History, Activity, AlertCircle, Crown
 } from 'lucide-react'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { CustomerEntry } from '@/types/dashboard'
 import { cn } from '@/lib/utils'
-import { useEffect, useState } from 'react'
+
 
 export interface RecentActivityProps {
     recentEntries: CustomerEntry[];

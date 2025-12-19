@@ -56,7 +56,8 @@ export function SessionsTable({
                                 {recentEntries.map((entry) => (
                                     <tr
                                         key={entry.id}
-                                        className="hover:bg-gray-900/30 transition-colors duration-200"
+                                        onClick={() => openEntryDetails(entry)}
+                                        className="hover:bg-gray-900/30 transition-colors duration-200 cursor-pointer"
                                     >
                                         <td className="p-4">
                                             <div className="font-medium text-white">{entry.customerName}</div>
